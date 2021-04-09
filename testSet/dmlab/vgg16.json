@@ -1,0 +1,25 @@
+{
+    "dataset": {
+        "name": "dmlab",
+        "size": "3.13 GiB",
+        "shape": [360, 480, 3],
+        "class": 6,
+        "sample": 65550
+    },
+
+    "model": {
+        "name": "vgg16",
+        "type" : "pre-trained",
+        "parameters" : 14714688,
+        "activations" : 151040,
+        "output": 512,
+        "activation-formula" : "224*224*3 + 512"
+    },
+
+    "args": {
+        "batch": 64,
+        "epoch": 50,
+        "loss": 0.5,
+        "cost": 100
+    }
+}
