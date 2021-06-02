@@ -1,16 +1,11 @@
-import sys
-import time
-import math
-import random
-import re
-import json
-import redis
-import subprocess
+import sys, time
+import math, random, re, json
+import redis, subprocess
 import multiprocessing as mp
 import concurrent.futures
+from urllib.parse import urlparse
 from scheduler import Scheduler
 from utils import Validator, Log, Ops
-from urllib.parse import urlparse
 
 
 class Controller():
@@ -43,7 +38,7 @@ class Controller():
                                           self.model,
                                           self.batch_size,
                                           self.epochs)
-        # Get db url for parameters storage
+        # Get db url to store model parameters
         dbIP = subprocess.run(
             ['/bin/bash', '-c', "docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' disdel-redis"], stdout=subprocess.PIPE).stdout.decode().strip()
         self.db_url = 'https://' + dbIP + ':6379'
@@ -53,31 +48,24 @@ class Controller():
         # Training action memory computation
         self.training_memory = self.__estimateMemory(
             'training', self.nb_tr_action)
-        print('TRAINING: Estimated #ofActions = {0} && Estimated Memory = {1}'.format(
-            self.nb_tr_action, self.training_memory))
 
         # Time estimation
         max_time = math.ceil((self.cost / self.nb_tr_action) /
                              (self.u_cost * Ops().MBtoGB(self.training_memory)))
-        self.time_limit = self.sys_timelimit if max_time > self.sys_timelimit else max_time
-        if self.params['dataset'] == 'dmlab':
-            self.time_limit = self.sys_timelimit
-            if 'resnet' in self.model['name']:
-                self.training_memory *= 1.8
-            elif 'vgg16' in self.model['name']:
-                self.training_memory = (self.training_memory / 6) * 2.9
-            elif 'inception' in self.model['name']:
-                self.training_memory = (self.training_memory / 3) * 1.8
-        self.training_memory = int(self.training_memory)
+        self.time_limit = self.sys_timelimit if max_time < self.sys_timelimit else max_time
+
+        print('TRAINING: Estimated #ofActions = {0}\nEstimated Memory = {1}\nTimeout = {2}'.format(
+            self.nb_tr_action, self.training_memory))
         # Determine aggregation hierarchy
         self._scheduleAggregation()
-
         return self
 
     def _scheduleAggregation(self):
         # Determine maximum number of actions to fit in a single aggregation container
         # maximum number of actions to be processed by one aggregation container
         self.nb_ag_action = self.nb_tr_action
+
+        # Estimate aggregation memory
         self.__estimateMemory('aggregation', self.nb_ag_action)
         print('AGGREGATION: Estimated #ofActions = {0}'.format(
             self.nb_ag_action))
@@ -121,7 +109,7 @@ class Controller():
 
         if memory_estimate > self.memory_limit:
             return self.memory_limit
-        while not Validator().validate(memory_estimate, self.memory_limit):  # while est >= limit
+        while not Validator().validate(memory_estimate, self.memory_limit):  # while est <= limit
             Log.Warning().warnMemory(memory_estimate, self.memory_limit)
             gap = math.ceil((memory_estimate -
                              self.memory_limit) / self.memory_limit)

@@ -1,6 +1,5 @@
 class Model(object):
 
-
     def __init__(self, model_features, initial_shape, number_of_classes):
         self.initial_shape = initial_shape
         self.layers = model_features
@@ -11,7 +10,6 @@ class Model(object):
         self.dense_layers_nodes = [64, number_of_classes]
 
     def build(self, model_type='new', train_params=0, latest_shape=None):
-
         if 'type' in self.layers and self.layers['type'] == 'pre-trained':
             self.activations = int(self.layers['activations'])
             self.build_preTrained(self.layers['parameters'], self.layers['output'])
@@ -54,42 +52,33 @@ class Model(object):
 class Layer():
 
     def convParams(number_of_channels, size_of_filters, number_of_filters):
-
         return (number_of_channels *
                       (size_of_filters ** 2) * number_of_filters) + number_of_filters
 
 
     def depthParams(number_of_channels, size_of_filters, number_of_filters):
-
         return number_of_channels * (size_of_filters ** 2) + number_of_channels * number_of_filters + number_of_filters
 
     def denseParams(number_of_output_nodes, number_of_input_nodes):
-
         return number_of_input_nodes * number_of_output_nodes + number_of_output_nodes
 
     def convOutput(dataset_shape, size_of_filters, number_of_filters):
-
         #return (dataset_shape[0] - size_of_filters + 1,
         #               dataset_shape[1] - size_of_filters + 1, number_of_filters)
 
         return (dataset_shape[0], dataset_shape[1], number_of_filters)
 
     def depthOutput(dataset_shape, size_of_filters, number_of_filters):
-
         return (dataset_shape[0], dataset_shape[1], number_of_filters)
 
     def poolOutput(dataset_shape, size_of_filters, number_of_filters):
-
         return (dataset_shape[0]/2, dataset_shape[1]/2, dataset_shape[2], 0)
 
     def avgOutput(dataset_shape, size_of_filters, number_of_filters):
-
         return (1, 1, dataset_shape[2], 0)
 
     def flattenOutput(dataset_shape, size_of_filters, number_of_filters):
-
         return dataset_shape[0] * dataset_shape[1] * dataset_shape[2]
 
     def denseOutput(output_shape):
-
         return output_shape

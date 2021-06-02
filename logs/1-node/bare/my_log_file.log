@@ -1,0 +1,361 @@
+2021-05-31 02:09:21.347447: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.347449: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.347448: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.347448: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.347489: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.347496: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.347501: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.347505: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.358746: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.358747: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.358751: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.358748: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.358746: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.358751: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-05-31 02:09:21.358778: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.358786: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.358790: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.358795: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.358800: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:21.358805: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-05-31 02:09:22.716994: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.717044: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.717065: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.717501: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-31 02:09:22.738133: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.52.0.252:64210}
+2021-05-31 02:09:22.742665: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:411] Started server with target: grpc://10.52.0.252:64210
+2021-05-31 02:09:22.759413: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.759444: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.759466: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.759902: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-31 02:09:22.761858: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.761897: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.761919: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.762164: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.762188: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.762203: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.762399: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-31 02:09:22.762615: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-31 02:09:22.770221: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.770250: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.770267: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.770748: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+E0531 02:09:22.772390341   69187 server_chttp2.cc:40]        {"created":"@1622426962.772337476","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.772334659","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.772327102","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.772324999","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.772334320","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.772333052","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.772434: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.772628: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+E0531 02:09:22.774509759   69192 server_chttp2.cc:40]        {"created":"@1622426962.774459703","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.774455176","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.774448725","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.774446457","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.774454896","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.774453690","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.774561: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+E0531 02:09:22.775237647   69200 server_chttp2.cc:40]        {"created":"@1622426962.775185453","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.775183059","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.775176712","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.775174885","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.775182764","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.775181562","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.775287: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.775469: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+2021-05-31 02:09:22.782176: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.782204: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.782222: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.782689: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+E0531 02:09:22.783233490   69195 server_chttp2.cc:40]        {"created":"@1622426962.783182126","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.783179571","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.783172821","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.783170996","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.783179275","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.783178056","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.783277: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.784268: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+E0531 02:09:22.793697266   69185 server_chttp2.cc:40]        {"created":"@1622426962.793646295","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.793643633","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.793637308","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.793635329","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.793643327","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.793642083","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.793748: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.794040: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+2021-05-31 02:09:22.813707: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.813750: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.813771: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.814271: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-31 02:09:22.814802: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-05-31 02:09:22.816625: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.816649: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.816667: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.817146: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+E0531 02:09:22.825981917   69188 server_chttp2.cc:40]        {"created":"@1622426962.825929845","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.825927003","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.825917503","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.825915380","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.825926737","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.825923970","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.826045: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.826225: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+E0531 02:09:22.829344375   69198 server_chttp2.cc:40]        {"created":"@1622426962.829292465","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.829289660","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.829283103","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.829281011","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.829289384","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.829288029","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.829399: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.830030: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.830056: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.830076: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.830557: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-05-31 02:09:22.830571: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-31 02:09:22.830583: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-05-31 02:09:22.830599: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-1-9): /proc/driver/nvidia/version does not exist
+2021-05-31 02:09:22.831077: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-31 02:09:22.832210: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+2021-05-31 02:09:22.832890: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2400000000 Hz
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+E0531 02:09:22.842704535   69190 server_chttp2.cc:40]        {"created":"@1622426962.842651755","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.842648481","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.842641428","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.842637562","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.842648159","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.842647007","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.842752: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.842950: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+E0531 02:09:22.843607557   69199 server_chttp2.cc:40]        {"created":"@1622426962.843555219","description":"No address added out of total 1 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":395,"referenced_errors":[{"created":"@1622426962.843551892","description":"Failed to add any wildcard listeners","file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_posix.cc","file_line":342,"referenced_errors":[{"created":"@1622426962.843544524","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.843542348","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]},{"created":"@1622426962.843551571","description":"Unable to configure socket","fd":5,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":216,"referenced_errors":[{"created":"@1622426962.843550231","description":"Address already in use","errno":98,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/tcp_server_utils_posix_common.cc","file_line":189,"os_error":"Address already in use","syscall":"bind"}]}]}]}
+2021-05-31 02:09:22.843656: E tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:533] Unknown: Could not start gRPC server
+2021-05-31 02:09:22.845158: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+
+real	0m2.096s
+user	0m2.183s
+sys	0m3.971s
+
+real	0m2.100s
+user	0m2.187s
+sys	0m3.528s
+
+real	0m2.108s
+user	0m2.081s
+sys	0m3.430s
+
+real	0m2.147s
+user	0m2.544s
+sys	0m4.304s
+
+real	0m2.197s
+user	0m2.227s
+sys	0m3.214s
+
+real	0m2.230s
+user	0m2.342s
+sys	0m3.542s
+
+real	0m2.240s
+user	0m2.165s
+sys	0m3.491s
+
+real	0m2.265s
+user	0m2.596s
+sys	0m4.232s
+2021-05-31 02:09:23.775505: E tensorflow/core/common_runtime/eager/context_distributed_manager.cc:699] Could not start gRPC server
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    used_memory = server.train([data, model, shape[0], shape[1], shape[2], label, batch, epoch, int(example[0])])
+  File "/root/1-node/server.py", line 46, in train
+    strategy = tensorflow.distribute.experimental.MultiWorkerMirroredStrategy()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/util/deprecation.py", line 337, in new_func
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 254, in __init__
+    self).__init__(cluster_resolver, communication_options)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 189, in __init__
+    communication_options=communication_options))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 327, in __init__
+    self._initialize_strategy(self._cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 339, in _initialize_strategy
+    self._initialize_multi_worker(cluster_resolver)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 469, in _initialize_multi_worker
+    context.context().ensure_initialized()
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/eager/context.py", line 537, in ensure_initialized
+    pywrap_tfe.TFE_EnableCollectiveOps(context_handle, server_def_str)
+tensorflow.python.framework.errors_impl.UnknownError: Could not start gRPC server
+
+real	0m3.018s
+user	0m2.070s
+sys	0m3.479s
+2021-05-31 02:10:42.883440: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_245970"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+
+real	3m14.064s
+user	48m46.771s
+sys	14m31.768s
+Job 1

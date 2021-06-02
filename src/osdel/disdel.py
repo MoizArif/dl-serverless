@@ -1,8 +1,8 @@
+import sys
 import argparse
 import time, resource
-import sys
-from controller import Controller
 from utils import Validator, Log
+from controller import Controller
 
 def main():
     init_time = time.time()

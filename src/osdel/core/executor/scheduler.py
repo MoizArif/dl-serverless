@@ -34,33 +34,23 @@ class Scheduler():
         # The size is factored by 3 because it is: (1) Downloaded (2) Loaded (3) Cached
         data = 3*self.dataset_size
         sft_limit = 512
-        #data = self.dataset_size
         model_size = (self.params[0] * 4)/2**20
         # num_steps = self.number_of_data_records[job] / (self.batch * number_of_action)
-
         if job is 0:
             # training
             fit_estimate = self.getTrainingMemory(number_of_action)
-            if self.model['name']=='vgg16':
-                return math.ceil(data + fit_estimate + package_size + model_size + sft_limit) * 6
-            elif self.model['name']=='inception':
-                return math.ceil(data + fit_estimate + package_size + model_size + sft_limit) * 3
         elif job is 1:
             # Weights collection
             ag_estimate = self.getAggregationMemory(number_of_action)
             return ag_estimate + package_size + sft_limit
-        else:
-            # Inference
-            fit_estimate = self.getInferenceMemory(number_of_action)
 
-        #print('data: {0} | fit: {1} | package: {2}'.format(data, fit_estimate, package_size))
         print('data: {0} | fit: {1} | package: {2} | model: {3}'.format(data, fit_estimate, package_size, model_size))
         return math.ceil(data + fit_estimate + package_size + model_size + sft_limit)
 
     def getTrainingMemory(self, number_of_action):
         # Training
         activation_memory = self.getActivationMemory()
-        params_memory = self.getParameterMemory('training')
+        params_memory = self.getParameterMemory()
         misc_memory = self.getMiscMemory()
         total_memory = (activation_memory * 2 * (self.batch/number_of_action)) + params_memory + misc_memory*self.epoch
         print("Trainable Mem: {0}\nActivations Mem: {1}\nMiscelaneous Mem: {2}".format(
@@ -68,10 +58,8 @@ class Scheduler():
             )
         return total_memory
 
-    def getParameterMemory(self, type):
+    def getParameterMemory(self):
         number_of_pass = 2
-        if type is 'inference':
-            return (self.params[0] * 4) / 2**20
         return (self.params[0] * (number_of_pass + 2) * 4) / 2**20
 
     def getActivationMemory(self):
@@ -104,19 +92,3 @@ class Scheduler():
         model_memory = (self.params[0] * 4)/2**20
         ag_estimate = math.ceil(model_memory * (nb_of_target + 4))
         return ag_estimate
-
-
-'''
-    Illustration of number of parameters computation (MNIST)
-
-    Layers                  Input                   Output                  #ofParams
-    __init                  28x28 GreyScale         (28,28,1)               None
-    Conv2D                  (28,28,1)               (26,26,32)              320
-    MaxPool2D               (26,26,32)              (13,13,32)              None
-    Flatten                 (13,13,32)              (5408)                  None
-    Dense(64)               (5408)                  (64)                    346112
-    Dense(10)               (64)                    (10)                    640
-                                                                        -----------------
-    Flatten                 (13,13,32)              (5408)                  None
-    Dense(64)               (5408)                  (64)                    346112
-'''

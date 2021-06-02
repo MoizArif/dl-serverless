@@ -1,0 +1,388 @@
+Start of the batch job execution
+09:45:49
+Dense		64		23718848		64
+Dense		10		23719498		10
+Trainable parameters: 23719498
+Activations: 10777098
+Miscelaneous: 784
+There are 23719498 parameters
+job:  0
+Trainable Mem: 361.9308166503906
+Activations Mem: 82.22273254394531
+Miscelaneous Mem: 0.19140625
+data: 96 | fit: 5633.756011962891 | package: 225 | model: 90.48270416259766
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 6558
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-7/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-7/training0-1
+Dense		64		23718848		64
+Dense		10		23719498		10
+Trainable parameters: 23719498
+Activations: 10777098
+Miscelaneous: 784
+There are 23719498 parameters
+job:  0
+Trainable Mem: 361.9308166503906
+Activations Mem: 82.22273254394531
+Miscelaneous Mem: 0.19140625
+data: 96 | fit: 5633.756011962891 | package: 225 | model: 90.48270416259766
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 6558
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-10/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-10/training0-1
+Dense		64		14747520		64
+Dense		10		14748170		10
+Trainable parameters: 14748170
+Activations: 151114
+Miscelaneous: 784
+There are 14748170 parameters
+job:  0
+Trainable Mem: 225.03921508789062
+Activations Mem: 1.1529083251953125
+Miscelaneous Mem: 0.19140625
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 7188
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-9/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 10782 --timeout 418999$....
+Result: ok: updated action disdel-9/training0-1
+Dense		64		21933920		64
+Dense		10		21934570		10
+Trainable parameters: 21934570
+Activations: 4312986
+Miscelaneous: 784
+There are 21934570 parameters
+job:  0
+Trainable Mem: 334.6949768066406
+Activations Mem: 32.90547180175781
+Miscelaneous Mem: 0.19140625
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 10101
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-2/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 15151 --timeout 298166$....
+Result: ok: updated action disdel-2/training0-1
+Dense		64		14747520		64
+Dense		10		14748170		10
+Trainable parameters: 14748170
+Activations: 151114
+Miscelaneous: 784
+There are 14748170 parameters
+job:  0
+Trainable Mem: 225.03921508789062
+Activations Mem: 1.1529083251953125
+Miscelaneous Mem: 0.19140625
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 7188
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-3/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 10782 --timeout 418999$....
+Result: ok: updated action disdel-3/training0-1
+Dense		64		23718848		64
+Dense		10		23719498		10
+Trainable parameters: 23719498
+Activations: 10777098
+Miscelaneous: 784
+There are 23719498 parameters
+job:  0
+Trainable Mem: 361.9308166503906
+Activations Mem: 82.22273254394531
+Miscelaneous Mem: 0.19140625
+data: 96 | fit: 5633.756011962891 | package: 225 | model: 90.48270416259766
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 6558
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-1/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-1/training0-1
+Dense		64		21933920		64
+Dense		10		21934570		10
+Trainable parameters: 21934570
+Activations: 4312986
+Miscelaneous: 784
+There are 21934570 parameters
+job:  0
+Trainable Mem: 334.6949768066406
+Activations Mem: 32.90547180175781
+Miscelaneous Mem: 0.19140625
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 10101
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-5/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 15151 --timeout 298166$....
+Result: ok: updated action disdel-5/training0-1
+Dense		64		21933920		64
+Dense		10		21934570		10
+Trainable parameters: 21934570
+Activations: 4312986
+Miscelaneous: 784
+There are 21934570 parameters
+job:  0
+Trainable Mem: 334.6949768066406
+Activations Mem: 32.90547180175781
+Miscelaneous Mem: 0.19140625
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 10101
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-8/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 15151 --timeout 298166$....
+Result: ok: updated action disdel-8/training0-1
+Dense		64		23718848		64
+Dense		10		23719498		10
+Trainable parameters: 23719498
+Activations: 10777098
+Miscelaneous: 784
+There are 23719498 parameters
+job:  0
+Trainable Mem: 361.9308166503906
+Activations Mem: 82.22273254394531
+Miscelaneous Mem: 0.19140625
+data: 96 | fit: 5633.756011962891 | package: 225 | model: 90.48270416259766
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 6558
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-4/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-4/training0-1
+Dense		64		14747520		64
+Dense		10		14748170		10
+Trainable parameters: 14748170
+Activations: 151114
+Miscelaneous: 784
+There are 14748170 parameters
+job:  0
+Trainable Mem: 225.03921508789062
+Activations Mem: 1.1529083251953125
+Miscelaneous Mem: 0.19140625
+TRAINING: Estimated #ofActions = 2 && Estimated Memory = 7188
+job:  1
+AGGREGATION: Estimated #ofActions = 2
+job:  1
+$wsk -i action update disdel-6/training0-1 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 10782 --timeout 418999$....
+Result: ok: updated action disdel-6/training0-1
+$wsk -i action update disdel-7/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-7/training0-2
+$wsk -i action update disdel-3/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 10782 --timeout 418999$....
+Result: ok: updated action disdel-3/training0-2
+$wsk -i action update disdel-9/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 10782 --timeout 418999$....
+Result: ok: updated action disdel-9/training0-2
+$wsk -i action update disdel-4/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-4/training0-2
+$wsk -i action update disdel-5/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 15151 --timeout 298166$....
+Result: ok: updated action disdel-5/training0-2
+$wsk -i action update disdel-8/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 15151 --timeout 298166$....
+Result: ok: updated action disdel-8/training0-2
+$wsk -i action update disdel-6/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 10782 --timeout 418999$....
+Result: ok: updated action disdel-6/training0-2
+$wsk -i action update disdel-2/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 15151 --timeout 298166$....
+Result: ok: updated action disdel-2/training0-2
+$wsk -i action update disdel-1/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-1/training0-2
+$wsk -i action update disdel-10/training0-2 ./training.py --docker kevinassogba/tensorwhisk:latest --memory 9837 --timeout 459251$....
+Result: ok: updated action disdel-10/training0-2
+Training model on range '0-50' $wsk -i action invoke disdel-2/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-2/training0-1 with id 4dd030ce73584d659030ce7358bd65e4
+{
+    "Compute-Output": "model_0to50_mnist_inception_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-10/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-10/training0-1 with id 4dc58f088ed94119858f088ed941195e
+{
+    "Compute-Output": "model_0to50_mnist_resnet50_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-9/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-9/training0-1 with id c9b18b06cbcd4cc3b18b06cbcd5cc33a
+{
+    "Compute-Output": "model_0to50_mnist_vgg16_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-7/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-7/training0-1 with id 809c3cc29fc64dfa9c3cc29fc65dfad7
+{
+    "Compute-Output": "model_0to50_mnist_resnet50_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-5/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-5/training0-1 with id 5cd98a70c8ef4c6c998a70c8efdc6ce1
+{
+    "Compute-Output": "model_0to50_mnist_inception_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-3/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-3/training0-1 with id 31849a9fd4424af9849a9fd4427af9b6
+{
+    "Compute-Output": "model_0to50_mnist_vgg16_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-4/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-4/training0-1 with id fd9b87d7a51149d39b87d7a51109d36f
+{
+    "Compute-Output": "model_0to50_mnist_resnet50_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-6/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-6/training0-1 with id 3f6ffd8c66ce4e2caffd8c66cefe2cf2
+{
+    "Compute-Output": "model_0to50_mnist_vgg16_0 trained and stored successfully."
+}
+Training model on range '50-100' $wsk -i action invoke disdel-7/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-7/training0-2 with id 44bdfcf9183a4260bdfcf9183a42603e
+{
+    "Compute-Output": "model_50to100_mnist_resnet50_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-1/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-1/training0-1 with id f9d025d753c547199025d753c54719d1
+{
+    "Compute-Output": "model_0to50_mnist_resnet50_0 trained and stored successfully."
+}
+Training model on range '0-50' $wsk -i action invoke disdel-8/training0-1 --param start 0 --param end 50 --param range train[0%:50%] --param cid 0$....
+Result: ok: invoked /_/disdel-8/training0-1 with id 36f38c3303884e5bb38c3303880e5bae
+{
+    "Compute-Output": "model_0to50_mnist_inception_0 trained and stored successfully."
+}
+$wsk -i action update disdel-7/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1280 --timeout 459251$....
+Result: ok: updated action disdel-7/aggregationMiddle0-0
+Training model on range '50-100' $wsk -i action invoke disdel-3/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-3/training0-2 with id 9eca8217549545bb8a8217549555bbae
+{
+    "Compute-Output": "model_50to100_mnist_vgg16_0 trained and stored successfully."
+}
+$wsk -i action update disdel-3/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1075 --timeout 418999$....
+Result: ok: updated action disdel-3/aggregationMiddle0-0
+Training model on range '50-100' $wsk -i action invoke disdel-9/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-9/training0-2 with id 5df568ddae1f498eb568ddae1fe98ec0
+{
+    "Compute-Output": "model_50to100_mnist_vgg16_0 trained and stored successfully."
+}
+$wsk -i action update disdel-9/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1075 --timeout 418999$....
+Result: ok: updated action disdel-9/aggregationMiddle0-0
+['model_0to50_mnist_vgg16_0', 'model_50to100_mnist_vgg16_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-9/aggregationMiddle0-0 --param target '['model_0to50_mnist_vgg16_0', 'model_50to100_mnist_vgg16_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-9/aggregationMiddle0-0 with id 7324ca3d69794d82a4ca3d69799d82bd
+{
+    "Compute-Output": "model_average_0_0_mnist_vgg16 aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/vgg16.json @ Time: 315.3453986644745 & Memory: 0.23046875
+['model_0to50_mnist_vgg16_0', 'model_50to100_mnist_vgg16_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-3/aggregationMiddle0-0 --param target '['model_0to50_mnist_vgg16_0', 'model_50to100_mnist_vgg16_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-3/aggregationMiddle0-0 with id 01bb6d99e3c54e9ebb6d99e3c5ae9e70
+{
+    "Compute-Output": "model_average_0_0_mnist_vgg16 aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/vgg16.json @ Time: 315.52592372894287 & Memory: 0.19921875
+Training model on range '50-100' $wsk -i action invoke disdel-6/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-6/training0-2 with id d7aa84a6bfad4c80aa84a6bfad0c80eb
+{
+    "Compute-Output": "model_50to100_mnist_vgg16_0 trained and stored successfully."
+}
+$wsk -i action update disdel-6/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1075 --timeout 418999$....
+Result: ok: updated action disdel-6/aggregationMiddle0-0
+['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-7/aggregationMiddle0-0 --param target '['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-7/aggregationMiddle0-0 with id 94971712655841bf971712655831bf9e
+{
+    "Compute-Output": "model_average_0_0_mnist_resnet50 aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/resnet50.json @ Time: 316.4965646266937 & Memory: 0.14453125
+Training model on range '50-100' $wsk -i action invoke disdel-8/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-8/training0-2 with id 5c8cd3027e32451c8cd3027e32a51c8c
+{
+    "Compute-Output": "model_50to100_mnist_inception_0 trained and stored successfully."
+}
+$wsk -i action update disdel-8/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1240 --timeout 298166$....
+Result: ok: updated action disdel-8/aggregationMiddle0-0
+Training model on range '50-100' $wsk -i action invoke disdel-5/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-5/training0-2 with id c3504ad69ad547e9904ad69ad5e7e9d6
+{
+    "Compute-Output": "model_50to100_mnist_inception_0 trained and stored successfully."
+}
+$wsk -i action update disdel-5/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1240 --timeout 298166$....
+Result: ok: updated action disdel-5/aggregationMiddle0-0
+['model_0to50_mnist_vgg16_0', 'model_50to100_mnist_vgg16_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-6/aggregationMiddle0-0 --param target '['model_0to50_mnist_vgg16_0', 'model_50to100_mnist_vgg16_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-6/aggregationMiddle0-0 with id 6303c64b5cbf46f583c64b5cbf76f565
+{
+    "Compute-Output": "model_average_0_0_mnist_vgg16 aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/vgg16.json @ Time: 321.62099623680115 & Memory: 0.24609375
+['model_0to50_mnist_inception_0', 'model_50to100_mnist_inception_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-5/aggregationMiddle0-0 --param target '['model_0to50_mnist_inception_0', 'model_50to100_mnist_inception_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-5/aggregationMiddle0-0 with id 4c400d2b64434d64800d2b64430d6436
+{
+    "Compute-Output": "model_average_0_0_mnist_inception aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/inception.json @ Time: 323.9000961780548 & Memory: 0.20703125
+Training model on range '50-100' $wsk -i action invoke disdel-4/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-4/training0-2 with id 9e6e700212694adeae700212696ade1a
+{
+    "Compute-Output": "model_50to100_mnist_resnet50_0 trained and stored successfully."
+}
+$wsk -i action update disdel-4/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1280 --timeout 459251$....
+Result: ok: updated action disdel-4/aggregationMiddle0-0
+['model_0to50_mnist_inception_0', 'model_50to100_mnist_inception_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-8/aggregationMiddle0-0 --param target '['model_0to50_mnist_inception_0', 'model_50to100_mnist_inception_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-8/aggregationMiddle0-0 with id 33bae034a15f4c7abae034a15f8c7a98
+{
+    "Compute-Output": "model_average_0_0_mnist_inception aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/inception.json @ Time: 347.51969361305237 & Memory: 0.16015625
+['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-4/aggregationMiddle0-0 --param target '['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-4/aggregationMiddle0-0 with id 216d0bd390074689ad0bd390074689e2
+{
+    "Compute-Output": "model_average_0_0_mnist_resnet50 aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/resnet50.json @ Time: 379.3559124469757 & Memory: 0.21484375
+Training model on range '50-100' $wsk -i action invoke disdel-1/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-1/training0-2 with id 8801964d90374f4681964d90372f46d4
+{
+    "Compute-Output": "model_50to100_mnist_resnet50_0 trained and stored successfully."
+}
+$wsk -i action update disdel-1/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1280 --timeout 459251$....
+Result: ok: updated action disdel-1/aggregationMiddle0-0
+Training model on range '50-100' $wsk -i action invoke disdel-10/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-10/training0-2 with id 08c9e84b61204c9689e84b61202c96f8
+{
+    "Compute-Output": "model_50to100_mnist_resnet50_0 trained and stored successfully."
+}
+Training model on range '50-100' $wsk -i action invoke disdel-2/training0-2 --param start 50 --param end 100 --param range train[50%:100%] --param cid 0$....
+Result: ok: invoked /_/disdel-2/training0-2 with id 0581af6cd3904c4a81af6cd3900c4a5c
+{
+    "Compute-Output": "model_50to100_mnist_inception_0 trained and stored successfully."
+}
+$wsk -i action update disdel-2/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1240 --timeout 298166$....
+Result: ok: updated action disdel-2/aggregationMiddle0-0
+$wsk -i action update disdel-10/aggregationMiddle0-0 ./aggregationMiddle.py --docker kevinassogba/tensorwhisk:latest --memory 1280 --timeout 459251$....
+Result: ok: updated action disdel-10/aggregationMiddle0-0
+['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-1/aggregationMiddle0-0 --param target '['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-1/aggregationMiddle0-0 with id c2f45ddeb4a5478eb45ddeb4a5978e14
+{
+    "Compute-Output": "model_average_0_0_mnist_resnet50 aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/resnet50.json @ Time: 444.0490334033966 & Memory: 0.17578125
+['model_0to50_mnist_inception_0', 'model_50to100_mnist_inception_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-2/aggregationMiddle0-0 --param target '['model_0to50_mnist_inception_0', 'model_50to100_mnist_inception_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-2/aggregationMiddle0-0 with id 910b2ab843cc403b8b2ab843cc903be6
+{
+    "Compute-Output": "model_average_0_0_mnist_inception aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/inception.json @ Time: 445.19070386886597 & Memory: 0.18359375
+['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']
+Aggregation Services Level 0 Cluster 0 on-going....
+$wsk -i action invoke disdel-10/aggregationMiddle0-0 --param target '['model_0to50_mnist_resnet50_0', 'model_50to100_mnist_resnet50_0']' --param cluster 0 --param level 0$....
+Result: ok: invoked /_/disdel-10/aggregationMiddle0-0 with id 4e7b91e70de74727bb91e70de7e727b6
+{
+    "Compute-Output": "model_average_0_0_mnist_resnet50 aggregated and stored successfully."
+}
+Job completed --> ../testSet/mnist/resnet50.json @ Time: 445.19969844818115 & Memory: 0.234375
+End of the batch job execution
+09:53:15
