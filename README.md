@@ -36,7 +36,7 @@ To setup up the environment as we did,
 **You do NOT need to install packages individually. Run the following scripts from the main directory.**
 
 #### Note
-While installing CouchDB, a windows requiring an ip address for database configuration. The default value appearing on screen is 127.0.0.1. ChANGE THAT VALUE TO 0.0.0.0
+While installing CouchDB, a windows requiring an ip address for database configuration. The default value appearing on screen is 127.0.0.1. Change that value to 0.0.0.0
 
 ## Quickstart
 
@@ -62,25 +62,4 @@ You can also run the following command to see the description and available opti
 
 ```
 $ disdel -h
-```
-
-## Performance comparison
-
-To evaluate the performance of the framework against a Baremetal Tensorflow deployment and Default serverless TensorFlow deployment, run the following command.
-
-For Baremetal Tensorflow:
-
-```
-$ cd src/baremetal && python3 run.py <dataset> <model> <batch> <epoch>
-```
-
-For Default serverless TensorFlow
-
-```
-$ cd src/defaultwhisk && whisk <task> <model> <dataset>
-```
-You can also run the following command to see the description and available options for the parameters.
-
-```
-$ whisk -h
 ```
