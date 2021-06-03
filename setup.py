@@ -8,11 +8,11 @@ with open('README.md') as rfile:
 
 setup(
     name='osdel',
-    version='1.0.0',
+    version='0.1.0',
     licence=license,
     description='Optimized Serverless Deep Learning',
     long_description=readme,
     author='High Performance Distributed Systems Lab @RIT',
     author_email = '',
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=('docs'))
 )

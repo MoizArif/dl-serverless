@@ -3,13 +3,12 @@ import server
 import time
 import sys
 
-# python3 run.py mnist resnet50 64 50
 
-file = open('../testSet/data_manifest.json')
+file = open('../data_manifest.json')
 full_data = json.load(file)
 file.close()
-data = sys.argv[1]
-model = sys.argv[2]
+model = sys.argv[1]
+data = sys.argv[2]
 batch = int(sys.argv[3])
 epoch = int(sys.argv[4])
 

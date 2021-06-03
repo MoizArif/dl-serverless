@@ -15,7 +15,7 @@ class Controller():
         self.image = "kevinassogba/tensorwhisk:latest"
         self.memory_limit = 70000  # 70 GB
         self.sys_timelimit = 900000  # 900 seconds
-        self.nb_tr_action = 4 #1
+        self.nb_tr_action = 2 #1
         self.params = params
         self.u_cost = 0.000017
 
@@ -59,6 +59,31 @@ class Controller():
         # Determine aggregation hierarchy
         self._scheduleAggregation()
         return self
+
+    def __estimateMemory(self, task, nb_of_action):
+
+        # Compute memory allocation based on minimum number of containers -> 2
+        memory_estimate = self.__computeMemory(task, nb_of_action)
+
+        if memory_estimate > self.memory_limit:
+            return self.memory_limit
+        while not Validator().validate(memory_estimate, self.memory_limit):
+            # Keep adjusting number of actions until memory allocation reduces memory resources
+            Log.Warning().warnMemory(memory_estimate, self.memory_limit)
+
+            # Determine gap to memory limit to yield increment/decrement container number
+            gap = math.ceil((memory_estimate -
+                             self.memory_limit) / self.memory_limit)
+            if task == 'training':
+                print('Deploying {0} containers'.format(self.nb_tr_action))
+                self._incActionBy(task, gap)
+                nb_of_action = self.nb_tr_action
+            else:
+                self._decActionBy(task, gap)
+                nb_of_action = self.nb_ag_action
+            memory_estimate = self.__computeMemory(task, nb_of_action)
+
+        return memory_estimate
 
     def _scheduleAggregation(self):
         # Determine maximum number of actions to fit in a single aggregation container
@@ -104,26 +129,6 @@ class Controller():
             del scheme[idx]
         return scheme
 
-    def __estimateMemory(self, task, nb_of_action):
-        memory_estimate = self.__computeMemory(task, nb_of_action)
-
-        if memory_estimate > self.memory_limit:
-            return self.memory_limit
-        while not Validator().validate(memory_estimate, self.memory_limit):  # while est <= limit
-            Log.Warning().warnMemory(memory_estimate, self.memory_limit)
-            gap = math.ceil((memory_estimate -
-                             self.memory_limit) / self.memory_limit)
-            if task == 'training':
-                print('Deploying {0} containers'.format(self.nb_tr_action))
-                self._incActionBy(task, gap)
-                nb_of_action = self.nb_tr_action
-            else:
-                self._decActionBy(task, gap)
-                nb_of_action = self.nb_ag_action
-            memory_estimate = self.__computeMemory(task, nb_of_action)
-
-        return memory_estimate
-
     def _incActionBy(self, task, inc_value):
         self.nb_tr_action += inc_value
 
@@ -156,10 +161,11 @@ class Controller():
         size_gap = int(math.floor(100 / self.nb_tr_action))
         results = mp.Queue()
         pool = []
-        # Proceed with training
+        # Proceed with training. Launch actions per cluster
         idx = 0
         for cluster in self.aggregation_scheme[0]:
             nb_of_action = cluster[1]
+            # Concurrent execution of containers in the same cluster
             for id in range(1, nb_of_action + 1):
                 self.__createAction(
                     "training", self.training_memory, cluster[0], id)
@@ -180,7 +186,8 @@ class Controller():
     def __createAction(self, name, memory, cluster, id=0):
         handle = name
         name += str(cluster) + '-' + str(id)
-        code = "wsk -i action update disdel-{jid}/{task} ./{func}.py --docker {img} --memory {mem} --timeout {tim}".format(
+        code = "wsk -i action update disdel-{jid}/{task} .. / actions
+/{func}.py --docker {img} --memory {mem} --timeout {tim}".format(
             jid=self.job, task=name, func=handle, img=self.image, mem=memory, tim=self.time_limit)
         self.__post(code, debug_level=1)
 
@@ -284,17 +291,3 @@ class Controller():
 
         outcome = [results.get() for action in pool]
         return outcome
-
-    def invokeTrainingBkp(self, name, action, size_gap, cluster, results):
-        start=action * size_gap
-        end=(action + 1) * size_gap
-        name += str(cluster) + '-' + str(action + 1)
-        data_range='train[{st}%:{nd}%]'.format(
-            st = start, nd = end)
-        print(
-            "Training model on range '{0}-{1}'".format(start, end), end = " ")
-        invocation="wsk -i action invoke disdel-{jid}/{task} --param start {st} --param end {nd} --param range {rng} --param cid {clst}".format(
-            jid = self.job, task = name, st = start, nd = end, rng = data_range, clst = cluster)
-        response=self.__post(invocation, debug_level = 1)
-        final_output=self.__getResult(response)
-        results.put(final_output)

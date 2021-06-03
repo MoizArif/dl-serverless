@@ -6,6 +6,14 @@ cd openwhisk/
 (cd tools/ubuntu-setup && ./all.sh)
 printf '[\u2713]\tSystem virtualization completed\n'
 
+# Basic modificaition to the platform. Changing action memory, invoker memory, timeout and log limits
+sed -ri "s/^(\s*)(invoker_heap | default('2g')).*/\1invoker_heap | default('8g')/" ~/openwhisk/ansible/group_vars/all
+sed -ri "s/^(\s*)(invoker_user_memory | default('2048m')).*/\1invoker_user_memory | default('71680m')/" ~/openwhisk/ansible/group_vars/all
+sed -ri 's/^(\s*)(max: "512m").*/\1max: "70000m"/' ~/openwhisk/common/scala/src/main/resources/application.conf
+sed -ri 's/^(\s*)(max: "5 m").*/\1max: "120 m"/' ~/openwhisk/common/scala/src/main/resources/application.conf
+sed -ri 's/^(\s*)(max: 1).*/\1max: 10/' ~/openwhisk/common/scala/src/main/resources/application.conf
+
+
 cd ansible
 export OW_DB=CouchDB
 export OW_DB_PROTOCOL=http

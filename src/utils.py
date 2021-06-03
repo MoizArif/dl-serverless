@@ -1,7 +1,9 @@
 import sys
 
+
 class Configure(object):
     """Configure."""
+
     def __init__(self, number_of_nodes):
         self.number_of_nodes = number_of_nodes
 
@@ -9,7 +11,8 @@ class Configure(object):
         self.invoke("bash ~/disdel/config/setup")
 
     def deploy(self):
-        self.invoke("bash ~/disdel/config/getDisdel {0}".format(self.number_of_nodes))
+        self.invoke(
+            "bash ~/disdel/config/getDisdel {0}".format(self.number_of_nodes))
 
     def redeploy(self):
         self.terminate()
@@ -19,7 +22,8 @@ class Configure(object):
         self.invoke("helm delete disdel ; kind delete cluster")
 
     def invoke(self, command):
-        subprocess.run(['/bin/bash', '-c', command], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        subprocess.run(['/bin/bash', '-c', command],
+                       stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
 
 class Validator(object):
@@ -29,11 +33,11 @@ class Validator(object):
         return task in {'train', 'infer'}
 
     def validModel(self, model):
-        return model in {'custom05', 'vgg16', 'resnet50', 'mobilenet'}
-        # return model in {'custom05'}
+        return model in {'custom05', 'vgg16', 'resnet50', 'mobilenet', 'resnet152', 'inception'}
 
     def validate(self, value, limit):
         return value < limit
+
 
 class Ops(object):
     """Math operations"""
@@ -46,6 +50,7 @@ class Ops(object):
 
     def GBtoMB(self, size):
         return size * 1024
+
 
 class Log(object):
     """Error logging."""
@@ -83,7 +88,7 @@ class Log(object):
         def modelValue(self):
             sys.stdout.write("\u001b[31m")
             print(
-                "{0}: Invalid request. Valid models are ['custom05', 'vgg16', 'resnet50', 'mobilenet'].".format(self.identifier))
+                "{0}: Invalid request. Valid models are ['custom05', 'vgg16', 'resnet50', 'mobilenet', 'resnet152', 'inception'].".format(self.identifier))
             sys.stdout.write("\u001b[0m")
 
     class Warning():

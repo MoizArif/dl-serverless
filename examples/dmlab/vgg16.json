@@ -12,8 +12,7 @@
         "type" : "pre-trained",
         "parameters" : 14714688,
         "activations" : 151040,
-        "output": 512,
-        "activation-formula" : "224*224*3 + 512"
+        "output": 512
     },
 
     "args": {
