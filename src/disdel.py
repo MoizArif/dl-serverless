@@ -25,7 +25,7 @@ def main():
                         help='Job ID. Used for batch jobs to denote jobs.')
 
     params = vars(parser.parse_args())
-    params['file'] = "../examples/{0}/{1}.json".format(
+    params['file'] = "$HOME/dl-serverless/examples/{0}/{1}.json".format(
         params['dataset'], params[model])
     disdel_control = Controller(params)
     disdel_control.configure().schedule().processRequest()

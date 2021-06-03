@@ -186,8 +186,7 @@ class Controller():
     def __createAction(self, name, memory, cluster, id=0):
         handle = name
         name += str(cluster) + '-' + str(id)
-        code = "wsk -i action update disdel-{jid}/{task} .. / actions
-/{func}.py --docker {img} --memory {mem} --timeout {tim}".format(
+        code = "wsk -i action update disdel-{jid}/{task} $HOME/dl-serverless/src/actions/{func}.py --docker {img} --memory {mem} --timeout {tim}".format(
             jid=self.job, task=name, func=handle, img=self.image, mem=memory, tim=self.time_limit)
         self.__post(code, debug_level=1)
 

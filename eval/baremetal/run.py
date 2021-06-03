@@ -4,7 +4,7 @@ import time
 import sys
 
 
-file = open('../data_manifest.json')
+file = open('$HOME/dl-serverless/eval/data_manifest.json')
 full_data = json.load(file)
 file.close()
 model = sys.argv[1]

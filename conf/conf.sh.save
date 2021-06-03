@@ -9,12 +9,12 @@ read engine
 if [[ $engine != '' ]] && [[ $engine == 'Kubernetes' ]]
 then
     echo "Kubernetes is currently not supported"
-    sudo $HOME/dl-serverless/conf/kubernetes/deploy.sh
+    sudo ./conf/kubernetes/deploy.sh
 elif [[ $engine != '' ]] && [[ $engine == 'Ansible' ]]
 then
     echo "Orchestration Engine set to Ansible"
-    sudo $HOME/dl-serverless/conf/ansible/deploy.sh
+    sudo ./conf/ansible/deploy.sh
 else
     echo "Orchestration Engine set to Ansible"
-    sudo $HOME/dl-serverless/conf/ansible/deploy.sh
+    sudo ./conf/ansible/deploy.sh
 fi

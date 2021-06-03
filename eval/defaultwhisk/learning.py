@@ -119,24 +119,11 @@ def main(args):
         optimizer=optimizers.Adam(),
         metrics=['acc'])
 
-    # Incorporating early stopping for callback
-    # early_stopping = callbacks.EarlyStopping(
-    #     monitor='train_loss',
-    #     min_delta=0.2,
-    #     patience=7,
-    #     verbose=1,
-    #     mode='auto')
-    #
-    # callbacks = [early_stopping]
-
     print("Training the Model")
-    # Train the the model
-    #print("MAKESPAN ::> Starting Training -> Time = {0}.s | Memory = {1}.MB".format(time.time()-initTime, resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024))
     history = model.fit(
         train_features_flat,
         train_label,
         epochs=NB_EPOCHS
-        # callbacks=callbacks
     )
     print("MAKESPAN ::> Training completed -> Time = {0}.s | Memory = {1}.MB".format(time.time()-initTime, resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024))
     final_memory = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024 - init_memory

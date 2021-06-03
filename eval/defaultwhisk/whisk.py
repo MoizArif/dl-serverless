@@ -22,7 +22,7 @@ def main():
                         help='Batch or standalone computation')
 
     params = vars(parser.parse_args())
-    params['file'] = "../../examples/{0}/{1}.json".format(
+    params['file'] = "$HOME/dl-serverless/examples/{0}/{1}.json".format(
         params['dataset'], params[model])
     build(params)
 
@@ -53,7 +53,7 @@ def build(params):
         metadata)
     post(package_code)
 
-    action_code = "wsk -i action update deep/learning learning.py --docker {2} --memory {0} --timeout {1}".format(
+    action_code = "wsk -i action update deep/learning $HOME/dl-serverless/eval/defaultwhisk/learning.py --docker {2} --memory {0} --timeout {1}".format(
         memory, timeout, image)
     post(action_code)
 

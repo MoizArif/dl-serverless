@@ -31,12 +31,7 @@ The configuration of a Kubernetes cluster for this project requires an implicit 
 * OpenWhisk
 * Redis
 
-To setup up the environment as we did,
-
-**You do NOT need to install packages individually. Run the following scripts from the main directory.**
-
-#### Note
-While installing CouchDB, a windows requiring an ip address for database configuration. The default value appearing on screen is 127.0.0.1. Change that value to 0.0.0.0
+**NOTE: You do NOT need to install packages individually. Run the following scripts from the main directory.**
 
 ## Quickstart
 
@@ -45,11 +40,51 @@ To orchestrate the project either with Ansible or Kubernetes, please ensure you 
 ```
 $ python3 --version
 ```
+For Ansible deployments, get the ip address of the machine's eno1np0 interface.
 
+```
+$ ifconfig
+```
 Install all requirements and build the serverless environment
 
 ```
 $ make install
+```
+
+Follow the installation procedure. You will be required to provide answers to some interactive questions such as:
+
+```
+Orchestration Engine (Ansible / Kubernetes)[Default: Ansible]:
+```
+Press Enter to choose default Ansible option or Reply with either Ansible or Kubernetes to specify a choice.
+
+Next, a window for CouchDB configuration will appear with requirements to provide the following information:
+```
+General type of CouchDB configuration: (Standalone / clustered/ none)
+```
+This framework is tested with ***Standalone***
+
+```
+CouchDB interface bind address:
+```
+This framework is tested with ***0.0.0.0***
+
+```
+Password for the CouchDB "admin" user:
+```
+Create a password for you CouchDB "admin" user.
+
+To complete the configuration of CouchDB database, you will be prompted to:
+
+```
+Enter CouchDB's Public IP: <ip addr from ifconfig>
+Enter CouchDB's Username: admin
+Enter CouchDB's Password: <created admin user password>
+```
+
+When the setup completes, source the .bashrc file to start interacting with the framework.
+
+```
 $ source ~/.bashrc
 ```
 
