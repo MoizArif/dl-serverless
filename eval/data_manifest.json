@@ -1,0 +1,74 @@
+{
+  "beans": {
+    "size": "171.63 MiB",
+    "shape": [500, 500, 3],
+    "class": 3,
+    "example": [1034, 128, 133],
+    "split": ["train", "test"]
+  },
+  "binary_alpha_digits":{
+    "size": "519.83 KiB",
+    "shape": [20, 16, 1],
+    "class": 36,
+    "example": [1404],
+    "split": ["train"]
+  },
+  "rock_paper_scissors": {
+    "size": "219.53 MiB",
+    "shape": [300, 300, 3],
+    "class": 3,
+    "example": [2520, 372],
+    "split": ["train", "test"]
+  },
+  "horses_or_humans": {
+    "size": "153.59 MiB",
+    "shape": [300, 300, 3],
+    "class": 2,
+    "example": [1027, 256],
+    "split": ["train", "test"]
+  },
+  "cifar10": {
+    "size": "294.58 MiB",
+    "shape": [32, 32, 3],
+    "class": 10,
+    "example": [50000, 10000],
+    "split": ["train", "test"]
+  },
+  "cifar100": {
+    "size": "292.74 MiB",
+    "shape": [32, 32, 3],
+    "class": 100,
+    "example": [50000, 10000],
+    "split": ["train"]
+  },
+  "fashion_mnist": {
+    "size": "65.78 MiB",
+    "shape": [28, 28, 1],
+    "class": 10,
+    "example": [60000, 10000],
+    "split": ["train", "test"]
+  },
+  "mnist": {
+    "size": "32.06 MiB",
+    "shape": [28, 28, 1],
+    "class": 10,
+    "example": [60000, 10000],
+    "split": ["train", "test"]
+  },
+  "omniglot": {
+    "size": "17.95 MiB",
+    "shape": [105, 105, 3],
+    "class": 1623,
+    "example": [19280, 13180],
+    "split": ["train", "test"]
+  },
+  "vgg16": {
+     "parameters": 14977857
+  },
+  "resnet50" : {
+    "parameters": 23536641
+  },
+  "resnet101" : {
+    "parameters": 23536641
+  }
+}
