@@ -45,7 +45,8 @@ For Ansible deployments, get the ip address of the machine's eno1np0 interface.
 ```
 $ ifconfig
 ```
-Install all requirements and build the serverless environment
+Install all requirements and build the serverless environment.
+For Kubernetes deployments, run this command only on the master node of the Kubernetes cluster, not on the worker nodes.
 
 ```
 $ make install
@@ -58,7 +59,9 @@ Orchestration Engine (Ansible / Kubernetes)[Default: Ansible]:
 ```
 Press Enter to choose default Ansible option or Reply with either Ansible or Kubernetes to specify a choice.
 
-Next, a window for CouchDB configuration will appear with requirements to provide the following information:
+### Orchestration with Ansible
+
+During the installation process, a window for CouchDB configuration will appear with requirements to provide the following information:
 ```
 General type of CouchDB configuration: (Standalone / clustered/ none)
 ```
@@ -88,6 +91,34 @@ When the setup completes, source the .bashrc file to start interacting with the 
 $ source ~/.bashrc
 ```
 
+### Orchestration with Kubernetes
+
+This framework is tested on a Kubernetes cluster with a master-worker architecture.
+Therefore, after running `make install` on the master node, label the master node as core:
+
+```
+kubectl label nodes <MASTER_NODE_NAME> openwhisk-role=core
+```
+
+Next, log into each worker node and run the following command to configure and join the cluster.
+
+```
+sudo $HOME/dl-serverless/conf/kubernetes/worker.sh
+```
+Return to the master node to label each of the worker nodes as invoker:
+
+```
+kubectl label nodes <WORKER_NODE_NAME> openwhisk-role=invoker
+```
+Finally, replace `<cluster IP>` in the folder `$HOME/dl-serverless/conf/kubernetes/mycluster.yaml` by the ip address from the command `kubectl cluster-info`, and run the following command to deploy OpenWhisk on the Kubernetes cluster:
+
+```
+sudo $HOME/dl-serverless/conf/kubernetes/deploy.sh
+```
+
+Congratulations! Your environment is ready.
+
+### Execution
 To test our project:
 
 ```

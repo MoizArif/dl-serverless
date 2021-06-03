@@ -1,4 +1,0 @@
-argparse
-ansible==2.5.2
-jinja2==2.9.6
-redis
