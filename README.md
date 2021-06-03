@@ -1,5 +1,5 @@
 # On Realizing Efficient Deep Learning Using Serverless Computing
-
+test
 Serverless computing is gaining rapid popularity as it reduces capital cost and enables quick application deployment without managing complex computing resources while improving application scalability.
 This project enables the execution of data intensive computational task, e.g., deep learning (DL), on serverless infrastructures. Key features addressed are resource-level constraints, specifically fixed memory allocation and short task timeouts, imposed by serverless platforms and that lead to premature job failures.
 We remove these constraints and develop an effective runtime framework that ensures that the appropriate amount of memory is allocated to containers for storing application data and a suitable timeout is selected for each job based on its complexity.
